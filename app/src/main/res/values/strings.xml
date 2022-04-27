@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LP_Disco</string>
+    <string name="menu_back_desc">Back</string>
+    <string name="menu_add_album_desc">Add New Album</string>
+</resources>
