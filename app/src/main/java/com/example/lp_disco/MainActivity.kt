@@ -56,3 +56,8 @@ private fun MainActivityContent(viewModel: LPDiscoViewModel) {
         }
     }
 }
+
+@Composable
+fun Greeting(name: String) {
+    Text(text = "Hello $name!")
+}

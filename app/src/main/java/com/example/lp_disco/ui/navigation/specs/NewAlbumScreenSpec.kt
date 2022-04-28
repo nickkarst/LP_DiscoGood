@@ -11,6 +11,7 @@ import androidx.work.WorkInfo
 import com.example.lp_disco.R
 import com.example.lp_disco.data.LPAlbum
 import com.example.lp_disco.ui.screens.newAlbumScreen
+import com.example.lp_disco.util.AlbumGenerator
 import com.example.lp_disco.viewmodels.LPDiscoViewModel
 
 
@@ -28,9 +29,9 @@ object NewAlbumScreenSpec : LPScreenSpec {
                           navController: NavController,
                           navBackStackEntry: NavBackStackEntry
     ) {
-        fun generateAlbum() = LPAlbum(i = 0, an = "", at = "", py = "")
+//        fun generateAlbum() = LPAlbum(i = 0, an = "", at = "", py = "")
         val awtState = rememberSaveable {
-            mutableStateOf( viewModel.addAwt(generateAlbum()) )
+            mutableStateOf( AlbumGenerator.generateAwt() )
         }
         newAlbumScreen(
             awtState = awtState,
